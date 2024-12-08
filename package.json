@@ -10,12 +10,13 @@
     "install": "yarn install",
     "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend dev\"",
     "postinstall": "husky",
-    "pre-commit": "echo execute pre-commit job"
+    "pre-commit": "yarn lint-staged"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "concurrently": "^9.1.0",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10"
   }
 }

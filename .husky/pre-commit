@@ -2,6 +2,4 @@
 set -e  # Exit on error
 set -o pipefail  # Exit on error in pipe
 
-echo "Running pre-commit hook"
-
 yarn pre-commit
