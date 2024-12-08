@@ -7,10 +7,13 @@
     "packages/*"
   ],
   "scripts": {
+    "install": "yarn install",
     "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend dev\"",
-    "install": "yarn install"
+    "postinstall": "husky",
+    "pre-commit": "echo execute pre-commit job"
   },
   "devDependencies": {
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "husky": "^9.1.7"
   }
 }
