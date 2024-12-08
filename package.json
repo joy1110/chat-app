@@ -1,0 +1,16 @@
+{
+  "name": "chat-app",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend dev\"",
+    "install": "yarn install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
