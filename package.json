@@ -9,13 +9,20 @@
   "scripts": {
     "install": "yarn install",
     "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend dev\"",
+    "lint": "yarn workspace frontend lint",
     "postinstall": "husky",
     "pre-commit": "yarn lint-staged"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
+    "@stylistic/eslint-plugin-ts": "^2.12.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
     "concurrently": "^9.1.0",
+    "eslint": "v8",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10"
   }
